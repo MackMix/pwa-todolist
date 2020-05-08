@@ -1,0 +1,32 @@
+{
+  "name": "pwa-todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx es-dev-server --app-index index.html --node-resolve --watch -p 8080",
+    "database": "npx json-server --watch data/database.json",
+    "css": "npx tailwindcss build ./styles/tailwind-import.css -o ./styles/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MackMix/pwa-todolist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MackMix/pwa-todolist/issues"
+  },
+  "homepage": "https://github.com/MackMix/pwa-todolist#readme",
+  "dependencies": {
+    "idb": "^5.0.2",
+    "lit-html": "^1.2.1",
+    "lit-icon": "^1.0.0",
+    "page": "^1.11.6"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.48.1",
+    "json-server": "^0.16.1",
+    "tailwind": "^4.0.0"
+  }
+}
